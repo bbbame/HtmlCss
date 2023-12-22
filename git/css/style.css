@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
-
-
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +8,11 @@
 a{
     text-decoration: none;
 }
+
+ul{
+    list-style: none;
+}
+
 #container{
     margin: 0 auto; /*화면 중앙 배치*/
     width: 1200px;
@@ -43,7 +46,56 @@ nav{
     float: right; /*오른쪽으로 플로팅*/
     width: 900px;
     height: 100px;
-    background-color: green;
+    padding: 40px;
+}
+
+#topMenu{
+    height: 60px;
+}
+
+
+#topMenu > li { /*메인 메뉴*/
+    float: left;
+    position: relative;
+}
+#topMenu > li > a{
+    display: block; /*링크 텍스트는 블록으로*/
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px #07c; /*그림자 추가. 가로, 세로, 색깔 */
+    padding: 20px 60px; /*세로, 가로*/
+}
+#topMenu > li > a > span {
+    font-size: 0.5em;  /*서브 메뉴의 화살표*/
+}
+#topMenu > li > a:hover {
+    color: #000; /*마우스 올리면 색상 바뀜*/
+    text-shadow: 0 -1px #07c; /*글자가 굵어지지 않도록 지정   */
+}
+
+
+#topMenu > li > ul {  /*서브 메뉴*/
+    display: none;  /*처음에는 감춤*/
+    position: absolute;
+    width: 160px;
+    background-color: rgba(255, 255, 255, 0.6); /*배경 투명색 지정*/
+    left: 20px;  /*왼쪽으로 쏠려있던 서브메뉴 위치 조정*/
+    margin: 0;
+}
+#topMenu > li > ul > li {
+    padding: 10px 10px 10px 30px; /*서브메뉴 항목 지정*/
+}
+#topMenu > li > ul > li > a{
+    font-size: 14px;
+    padding: 14px;
+    color: #000;
+}
+#topMenu > li:hover > ul {
+    display: block;  /*메인 메뉴 항목 위 오버하면 서브메뉴 표시*/
+    z-index: 10; /*슬라이드 쇼에 안가리게 조절*/
+}
+#topMenu > li > ul > li > a:hover{
+    color: #f00;  /*서브메뉴 마우스 오버하면 빨간색으로*/
 }
 
 
