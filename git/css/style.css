@@ -155,6 +155,7 @@ button:focus {
 #contents{
     width: 100%;
     height: 300px;
+    margin-top: 20px;
 }
 
 /*탭 메뉴 영역*/
@@ -217,12 +218,43 @@ button:focus {
     float: right;
     width: 600px;
     height: 100%;
-    background-color: skyblue;
+    margin-top: 20px;
 }
 
-
-
-
+#links ul{
+    padding: 0;
+    overflow: hidden; /*넘치는 항목은 감춤*/
+}
+#links ul li{
+    float: left;
+    width: 33%; /*세 항목의 영역을 균일하게 지정*/
+    text-align: center;
+    margin: 10px 0;
+    list-style: none;
+}
+#links ul li a span{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%; /*동그라미*/
+    border: 1px solid #ddd;
+    line-height: 150px; /*수직으로 가운데 오게*/
+}
+#quick-icon1{
+    background-image: url('../images/icon-1.jpg');
+}
+#quick-icon2{
+    background-image: url('../images/icon-2.jpg');
+}
+#quick-icon3{
+    background-image: url('../images/icon-3.jpg');
+}
+#links ul li a p{
+    margin-top: 15px;
+    font-weight: 600;
+    color: #666;
+}
 
 /*푸터 영역*/
 footer{
