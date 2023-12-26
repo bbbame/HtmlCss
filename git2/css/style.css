@@ -6,6 +6,9 @@
 a{
     text-decoration: none;
 }
+li{
+    list-style-type: none;
+}
 #container{
     margin-left: 10px;
     width: 1000px; /*너비 지정*/
