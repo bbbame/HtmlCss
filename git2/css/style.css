@@ -75,8 +75,9 @@ nav{    /*네브*/
     background-color: brown;
 }
 #notice > a{
-    background-color: pink;
+    background-color: rgb(255, 84, 84);
     font-weight: bold;
+    font-size: 17px;
 }
 #notice > ul li a{
     color: blueviolet;
