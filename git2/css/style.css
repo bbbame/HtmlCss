@@ -107,6 +107,13 @@ footer{
     float: left;
     color: white;
     height: 100px;
-    width: 400px;
-    padding-top: 35px;
+    width: 380px;
+    padding-top: 38px;
+    font-size: 14px;
+}
+#family select{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 28px;
 }
