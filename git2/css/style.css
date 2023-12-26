@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box; /*박스 영역은 테두리까지 지정*/
 }
+a{
+    text-decoration: none;
+}
 #container{
     margin-left: 10px;
     width: 1000px; /*너비 지정*/
