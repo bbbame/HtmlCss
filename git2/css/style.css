@@ -74,6 +74,13 @@ nav{    /*네브*/
     height: 100%;
     background-color: brown;
 }
+#notice > a{
+    background-color: pink;
+    font-weight: bold;
+}
+#notice > ul li a{
+    color: blueviolet;
+}
 /*갤러리*/
 #gallery{
     float: left;
