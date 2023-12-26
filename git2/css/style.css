@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*박스 영역은 테두리까지 지정*/
+}
+#container{
+    margin-left: 10px;
+    width: 1000px; /*너비 지정*/
+}
+
+
+
+/*헤더*/
+header{
+    position: relative;
+    width: 20%;
+    height: 650px;
+    background-color: rgba(193, 190, 190, 0.932);
+    float: left;
+}
+#logo{  /*로고*/
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+nav{    /*네브*/
+    float: top;
+    width: 100%;
+    height: 180px;
+    background-color: green;
+    overflow: hidden; /*영역 넘치면 감춤*/
+}
+
+/*이미지 슬라이드 쇼*/
+#slideShow{
+    float: right;
+    position: relative;
+    width: 800px;
+    height: 350px;
+    background-color: orange;
+}
+#slideShow a{
+    position: absolute;
+}
+.imgtext{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+/*콘텐츠*/
+#contents{
+    float: right;
+    display: flex;
+    width: 800px;
+    height: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    background-color: aqua;
+}
+
+/*공지사항*/
+#notice{
+    float: left;
+    flex: 1;
+    height: 100%;
+    background-color: brown;
+}
+/*갤러리*/
+#gallery{
+    float: left;
+    flex: 1;
+    height: 100%;
+    background-color: burlywood;
+}
+
+/*바로가기*/
+#quicklink{
+    float: left;
+    flex: 1;
+    height: 100%;
+    background-color: rgb(227, 214, 197);
+}
+
+
+footer{
+    float: right;
+    width: 800px;
+    height: 100px;
+    background-color: yellow;
+}
