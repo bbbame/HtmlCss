@@ -65,6 +65,7 @@ header{
 .mainMenu > li:hover > a~ul {
     display: block;
     animation: fadeIn 0.5s;
+    z-index: 1000;
 }
 @keyframes fadeIn {
     0% {
