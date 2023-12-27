@@ -77,11 +77,10 @@ nav{    /*네브*/
     float: left;
     flex: 1;
     height: 100%;
-
 }
 #notice > a{
     background-color: #ff5454;
-    padding: 5px 10px;
+    padding: 5px 20px;
     text-align: center;
     font-weight: bold;
     font-size: 16px;
@@ -101,7 +100,21 @@ nav{    /*네브*/
     float: left;
     flex: 1;
     height: 100%;
-    background-color: green;
+}
+#gallery > a{
+    background-color: #ff5454;
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.gallery ul{
+    display: flex;
+    justify-content: space-around; /*가로 간격 일정*/
+    align-items: center;
+    height: 170px;
+    margin-top: 6px;
+    border: 1px solid #dddddd;
 }
 
 
