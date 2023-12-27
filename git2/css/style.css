@@ -6,10 +6,15 @@
 a{
     text-decoration: none;
 }
+li{
+    list-style-type: none;
+}
 #container{
     margin-left: 10px;
-    width: 1000px; /*너비 지정*/
+    width: 1015px; /*너비 지정*/
 }
+
+
 
 
 
@@ -20,6 +25,7 @@ header{
     height: 650px;
     background-color: rgba(193, 190, 190, 0.932);
     float: left;
+    margin-right: 10px;
 }
 #logo{  /*로고*/
     width: 100%;
@@ -37,55 +43,28 @@ nav{    /*네브*/
 }
 
 /*이미지 슬라이드 쇼*/
-#imgSlide{
+#slideShow{
     float: right;
     position: relative;
     width: 800px;
     height: 340px;
-    overflow: hidden;
+    background-color: orange;
 }
-#imgSlide a{
+#slideShow a{
     position: absolute;
-    transition: all 1s;
-    animation: imgSlide 9s infinite linear;
 }
-.imgSlide > a:nth-child(1){
-    animation-delay: 0;
-}
-.imgSlide > a:nth-child(2){
-    animation-delay: -3s;
-}
-.imgSlide > a:nth-child(3){
-    animation-delay: -6s;
-}
-@keyframes imgSlide{
-    0% { transform: translateX(0);}
-    26% { transform: translateX(0);}
-    33% { transform: translateX(-100%);
-    animation-timing-function: step-end;}
-    93% { transform: translateX(100%);}
-    100% { transform: translateX(0);}
-}
-.imgText{
+.imgtext{
     position: absolute;
-    margin: 170px -550px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 16px 100px;
+    top: 40%;
+    left: 40%;
 }
-
-
-
-
-
 
 /*콘텐츠*/
 #contents{
     float: right;
     display: flex;
     width: 800px;
-    height: 200px;
+    height: 205px;
     grid-template-columns: repeat(3, 1fr);
     position: relative;
     background-color: aqua;
@@ -115,9 +94,10 @@ nav{    /*네브*/
 }
 
 
+
 footer{
     float: right;
     width: 800px;
-    height: 100px;
+    height: 90px;
     background-color: yellow;
 }
