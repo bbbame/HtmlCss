@@ -11,7 +11,7 @@ li{
 }
 #container{
     margin-left: 10px;
-    width: 1000px; /*너비 지정*/
+    width: 1015px; /*너비 지정*/
 }
 
 
@@ -23,6 +23,7 @@ header{
     height: 650px;
     background-color: rgba(193, 190, 190, 0.932);
     float: left;
+    margin-right: 10px;
 }
 #logo{  /*로고*/
     width: 100%;
@@ -44,7 +45,7 @@ nav{    /*네브*/
     float: right;
     position: relative;
     width: 800px;
-    height: 350px;
+    height: 340px;
     background-color: orange;
 }
 #slideShow a{
@@ -60,36 +61,49 @@ nav{    /*네브*/
 #contents{
     float: right;
     display: flex;
+    margin-top: 15px;
     width: 800px;
-    height: 200px;
+    height: 205px;
     grid-template-columns: repeat(3, 1fr);
     position: relative;
-    background-color: aqua;
 }
-#contents > div:nth-of-type(1){margin: 0px 0px 0px 10px;}
-#contents > div:nth-of-type(2){margin: 0 10px;}
 
+#contents > div > a {
+    border: 1px solid #dddddd;
+}
 /*공지사항*/
 #notice{
     float: left;
     flex: 1;
     height: 100%;
-    background-color: brown;
+
 }
 #notice > a{
-    background-color: rgb(255, 84, 84);
+    background-color: #ff5454;
+    padding: 5px 10px;
+    text-align: center;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 16px;
 }
-#notice > ul li a{
-    color: blueviolet;
+.notice > ul {
+    border: 1px solid #dddddd;
+}
+.notice ul li{
+    padding: 13px;
+    font-size: 13px;
+}
+.notice > ul > li > a> span {
+    float: right;
+}
+.notice > ul > li:nth-child(even){
+    background-color:#ededed;
 }
 /*갤러리*/
 #gallery{
     float: left;
     flex: 1;
     height: 100%;
-    background-color: burlywood;
+
 }
 
 /*바로가기*/
@@ -97,13 +111,13 @@ nav{    /*네브*/
     float: left;
     flex: 1;
     height: 100%;
-    background-color: rgb(227, 214, 197);
+
 }
 
 
 footer{
     float: right;
     width: 800px;
-    height: 100px;
+    height: 90px;
     background-color: yellow;
 }
