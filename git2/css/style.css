@@ -57,14 +57,7 @@ nav{    /*네브*/
 .imgSlide > a:nth-child(3){
     animation-delay: -6s;
 }
-@keyframes imgSlide{
-    0% { transform: translateX(0);}
-    26% { transform: translateX(0);}
-    33% { transform: translateX(-100%);
-    animation-timing-function: step-end;}
-    93% { transform: translateX(100%);}
-    100% { transform: translateX(0);}
-}
+
 .imgText{
     position: absolute;
     margin: 170px -550px;
