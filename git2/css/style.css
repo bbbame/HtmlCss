@@ -16,8 +16,6 @@ li{
 
 
 
-
-
 /*헤더*/
 header{
     position: relative;
@@ -63,37 +61,85 @@ nav{    /*네브*/
 #contents{
     float: right;
     display: flex;
+    margin-top: 10x;
     width: 800px;
-    height: 205px;
+    height: 220px;
     grid-template-columns: repeat(3, 1fr);
     position: relative;
-    background-color: aqua;
 }
 
+
+#contents > div > a {
+    color: rgb(47, 46, 48);
+    border: 1px solid #dddddd;
+}
 /*공지사항*/
 #notice{
     float: left;
     flex: 1;
     height: 100%;
-    background-color: brown;
+    margin-top: 15px;
+    margin-right: 10px;
 }
+#notice > a{
+    background-color: #ff5454;
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.notice > ul {
+    margin-top: 6px;
+    border: 1px solid #dddddd;
+}
+.notice ul li{
+    padding: 12px;
+    font-size: 13px;
+}
+.notice > ul > li > a> span {float: right;}
+.notice > ul > li:nth-child(even){background-color:#ededed;}
 /*갤러리*/
 #gallery{
     float: left;
     flex: 1;
     height: 100%;
-    background-color: burlywood;
+    margin-top: 15px;
+    margin-right: 10px;
 }
+#gallery > a{
+    background-color: #ff5454;
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.gallery ul{
+    display: flex;
+    justify-content: space-around; /*가로 간격 일정*/
+    align-items: center;
+    height: 167.5px;
+    margin-top: 6px;
+    border: 1px solid #dddddd;
+}
+
 
 /*바로가기*/
 #quicklink{
     float: left;
     flex: 1;
     height: 100%;
-    background-color: rgb(227, 214, 197);
+    background: url(/resources/Contents/direct/direct.jpg) no-repeat center;
 }
-
-
+.imgText{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 112, 112, 0.8);
+    font-weight: bold;
+    font-size: 16px;
+    margin: 90px 0px 0px 75px;
+    padding: 5px 20px;
+}
 
 footer{
     float: right;
