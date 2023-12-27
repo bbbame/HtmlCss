@@ -113,7 +113,7 @@ nav{    /*네브*/
     display: flex;
     justify-content: space-around; /*가로 간격 일정*/
     align-items: center;
-    height: 170px;
+    height: 167px;
     margin-top: 6px;
     border: 1px solid #dddddd;
 }
@@ -124,21 +124,17 @@ nav{    /*네브*/
     float: left;
     flex: 1;
     height: 100%;
-    background-color: blue;
-}
-#quicklink > a > img {
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
+    background: url(/resources/Contents/direct/direct.jpg) no-repeat center;
+    top: -10px;
 }
 .imgText{
     position: absolute;
     color: white;
     text-align: center;
-    margin: -120px 0px 0px 140px;
     background-color: rgba(255, 112, 112, 0.8);
     font-weight: bold;
     font-size: 16px;
+    margin: 90px 0px 0px 75px;
     padding: 5px 20px;
 }
 
