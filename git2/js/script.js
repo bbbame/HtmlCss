@@ -1,6 +1,16 @@
 window.onload = function() {
     current = 0;
     showSlides();
+
+    let modal = document.querySelector("#modalWrap");
+    let notone = document.querySelector('.notice > ul > li:first-child');
+    let btn = document.querySelector(".btn");
+    notone.onclick = function() {
+        modal.style.display = 'block';
+    }
+    btn.onclick = function() {
+        modal.style.display = 'none';
+    }
 }
 
 function showSlides() {
