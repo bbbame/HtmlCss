@@ -42,15 +42,18 @@ nav{    /*네브*/
     position: relative;
     width: 800px;
     height: 340px;
-    background-color: orange;
 }
 #slideShow a{
     position: absolute;
+    transition: all 1s;
 }
-.imgtext{
+.imgText{
     position: absolute;
-    top: 40%;
-    left: 40%;
+    margin: 170px -550px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 16px 100px;
 }
 
 /*콘텐츠*/
