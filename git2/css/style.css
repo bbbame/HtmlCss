@@ -67,6 +67,7 @@ nav{    /*네브*/
     grid-template-columns: repeat(3, 1fr);
     position: relative;
 }
+#contents > div:nth-of-type(2){margin:0 10px;}
 
 #contents > div > a {
     border: 1px solid #dddddd;
@@ -100,15 +101,16 @@ nav{    /*네브*/
     float: left;
     flex: 1;
     height: 100%;
-
+    background-color: green;
 }
+
 
 /*바로가기*/
 #quicklink{
     float: left;
     flex: 1;
     height: 100%;
-
+    background-color: blue;
 }
 
 
