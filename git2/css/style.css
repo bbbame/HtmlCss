@@ -61,13 +61,13 @@ nav{    /*네브*/
 #contents{
     float: right;
     display: flex;
-    margin-top: 15px;
+    margin-top: 10x;
     width: 800px;
-    height: 205px;
+    height: 220px;
     grid-template-columns: repeat(3, 1fr);
     position: relative;
 }
-#contents > div:nth-of-type(2){margin:0 10px;}
+
 
 #contents > div > a {
     color: rgb(47, 46, 48);
@@ -78,6 +78,8 @@ nav{    /*네브*/
     float: left;
     flex: 1;
     height: 100%;
+    margin-top: 15px;
+    margin-right: 10px;
 }
 #notice > a{
     background-color: #ff5454;
@@ -101,6 +103,8 @@ nav{    /*네브*/
     float: left;
     flex: 1;
     height: 100%;
+    margin-top: 15px;
+    margin-right: 10px;
 }
 #gallery > a{
     background-color: #ff5454;
@@ -113,7 +117,7 @@ nav{    /*네브*/
     display: flex;
     justify-content: space-around; /*가로 간격 일정*/
     align-items: center;
-    height: 167px;
+    height: 167.5px;
     margin-top: 6px;
     border: 1px solid #dddddd;
 }
@@ -125,7 +129,6 @@ nav{    /*네브*/
     flex: 1;
     height: 100%;
     background: url(/resources/Contents/direct/direct.jpg) no-repeat center;
-    top: -10px;
 }
 .imgText{
     position: absolute;
