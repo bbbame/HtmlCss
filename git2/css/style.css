@@ -141,9 +141,35 @@ nav{    /*네브*/
     padding: 5px 20px;
 }
 
+
+
+
 footer{
     float: right;
     width: 800px;
-    height: 90px;
-    background-color: yellow;
+    height: 100px;
+    background-color: rgba(125, 125, 125, 0.932);
+}
+#footlogo {
+    width: 280px;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    float: left;
+    font-size: 17px;
+    color: rgba(93, 93, 93, 0.932);
+}
+#copy{
+    float: left;
+    color: white;
+    height: 100px;
+    width: 380px;
+    padding-top: 38px;
+    font-size: 14px;
+}
+#family select{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 28px;
 }
