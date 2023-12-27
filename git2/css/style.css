@@ -37,15 +37,34 @@ nav{    /*네브*/
 }
 
 /*이미지 슬라이드 쇼*/
-#slideShow{
+#imgSlide{
     float: right;
     position: relative;
     width: 800px;
     height: 340px;
+    overflow: hidden;
 }
-#slideShow a{
+#imgSlide a{
     position: absolute;
     transition: all 1s;
+    animation: imgSlide 9s infinite linear;
+}
+.imgSlide > a:nth-child(1){
+    animation-delay: 0;
+}
+.imgSlide > a:nth-child(2){
+    animation-delay: -3s;
+}
+.imgSlide > a:nth-child(3){
+    animation-delay: -6s;
+}
+@keyframes imgSlide{
+    0% { transform: translateX(0);}
+    26% { transform: translateX(0);}
+    33% { transform: translateX(-100%);
+    animation-timing-function: step-end;}
+    93% { transform: translateX(100%);}
+    100% { transform: translateX(0);}
 }
 .imgText{
     position: absolute;
@@ -55,6 +74,11 @@ nav{    /*네브*/
     color: white;
     padding: 16px 100px;
 }
+
+
+
+
+
 
 /*콘텐츠*/
 #contents{

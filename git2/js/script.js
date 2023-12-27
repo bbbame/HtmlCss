@@ -2,6 +2,7 @@ window.onload = function() {
     current = 0;
     showSlides();
 }
+
 function showSlides() {
 let imgSlide = document.querySelector('.imgSlide');
 let img = imgSlide.getElementsByTagName('a');
