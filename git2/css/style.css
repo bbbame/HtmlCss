@@ -41,13 +41,12 @@ nav{    /*네브*/
     float: right;
     position: relative;
     width: 800px;
-    height: 340px;
+    height: 350px;
     overflow: hidden;
 }
 #imgSlide a{
     position: absolute;
     transition: all 1s;
-    animation: imgSlide 9s infinite linear;
 }
 .imgSlide > a:nth-child(1){
     animation-delay: 0;
