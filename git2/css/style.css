@@ -86,18 +86,15 @@ nav{    /*네브*/
     font-size: 16px;
 }
 .notice > ul {
+    margin-top: 6px;
     border: 1px solid #dddddd;
 }
 .notice ul li{
-    padding: 13px;
+    padding: 12px;
     font-size: 13px;
 }
-.notice > ul > li > a> span {
-    float: right;
-}
-.notice > ul > li:nth-child(even){
-    background-color:#ededed;
-}
+.notice > ul > li > a> span {float: right;}
+.notice > ul > li:nth-child(even){background-color:#ededed;}
 /*갤러리*/
 #gallery{
     float: left;
