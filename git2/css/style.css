@@ -6,10 +6,15 @@
 a{
     text-decoration: none;
 }
+li{
+    list-style-type: none;
+}
 #container{
     margin-left: 10px;
-    width: 1000px; /*너비 지정*/
+    width: 1015px; /*너비 지정*/
 }
+
+
 
 
 
@@ -20,6 +25,7 @@ header{
     height: 650px;
     background-color: rgba(193, 190, 190, 0.932);
     float: left;
+    margin-right: 10px;
 }
 #logo{  /*로고*/
     width: 100%;
@@ -41,7 +47,7 @@ nav{    /*네브*/
     float: right;
     position: relative;
     width: 800px;
-    height: 350px;
+    height: 340px;
     background-color: orange;
 }
 #slideShow a{
@@ -58,7 +64,7 @@ nav{    /*네브*/
     float: right;
     display: flex;
     width: 800px;
-    height: 200px;
+    height: 205px;
     grid-template-columns: repeat(3, 1fr);
     position: relative;
     background-color: aqua;
@@ -88,9 +94,10 @@ nav{    /*네브*/
 }
 
 
+
 footer{
     float: right;
     width: 800px;
-    height: 100px;
+    height: 90px;
     background-color: yellow;
 }
