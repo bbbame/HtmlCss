@@ -45,11 +45,12 @@ nav{    /*네브*/
     float: right;
     position: relative;
     width: 800px;
-    height: 340px;
-    background-color: orange;
+    height: 350px;
+    overflow: hidden;
 }
 #slideShow a{
     position: absolute;
+    transition: all 1s;
 }
 .imgtext{
     position: absolute;
